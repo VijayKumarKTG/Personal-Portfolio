@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+	height: 100%;
+}
+
+body{
+	font-family: AR JULIAN,"Times New Roman",Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif",Helvetica;
+}
+
+ul{
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+img{
+	width: 100%;
+	height: auto;
+	min-width: 100px;
+}
+
+#navbar,#welcome{
+	background-color: #FFE1D8;
+	text-align: center;
+}
+
+#navbar ul li{
+	display: inline;
+	margin-left: 10px;
+}
+
+a:link{
+	color: dimgray;
+}
+
+a:hover{
+	color: blue;
+}
+
+#welcome{
+	height: 100%;
+	color: dimgray;
+}
+
+#welcome > p{
+	color: green;
+}
+
+#projects{
+	text-align: center;
+	color: dimgray;
+}
+
+#projects ul{
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+#projects ul li{
+	width: 60%;
+	border: 2px solid dimgray;
+	margin:20px auto;
+	border-radius: 10%;
+}
+
+#projects ul li figcaption{
+	border-top: 2px dashed dimgray;
+	background-color: #FFE1D8;
+	padding: 5px;
+}
+
+#buttons{
+	display: block;
+	width: 150px;
+	height: 40px;
+	border: 2px solid dimgray;
+	padding: 5px;
+	margin: 5px auto;
+	border-radius: 15%;
+	background-color: #FFE1D8;
+}
+
+#contact{
+	background-color: #FFE1D8;
+	text-align: center;
+	padding: 20px;
+}
+
+#contact a{
+	margin-left: 5px;
+}
+
+@media only screen and (min-width:425px){
+	
+	#projects ul{
+		display: grid;
+		grid-template-columns: repeat(2,50%);
+		grid-template-rows: repeat(2,auto);
+	}
+
+	#projects ul li{
+		width: 60%;
+		border: 2px solid dimgray;
+		margin:20px auto;
+		border-radius: 10%;
+	}
+}
